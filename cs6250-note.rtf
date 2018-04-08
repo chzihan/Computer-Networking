@@ -11,4 +11,17 @@ ssh -X mininet@192.168.56.101\
 sudo mn --topo single,3 --mac --switch ovsk --controller remote\
 \
 {\field{\*\fldinst{HYPERLINK "http://192.168.56.101:8000/"}}{\fldrslt http://192.168.56.101:8000}}\
+\
+dig www.gatech.edu\
+dig ns gatech.edu\
+\
+a: name\
+ns: authoritative name server (referrals)\
+mx: mail server\
+cname: canonical name\
+ptr: ip -> name\
+aaaa: ipv6 address\
+\
+dig +trace gatech.edu\
+\
 }
